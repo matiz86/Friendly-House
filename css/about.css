@@ -1,0 +1,20 @@
+.about {
+  padding-top: 100px;
+  padding-bottom: 209px;
+}
+
+.about__title {
+  font-size: 50px;
+  font-family: var(--second-family);
+  line-height: 60px;
+  font-weight: 400;
+  margin-bottom: 27px;
+}
+
+.about__desc {
+  max-width: 447px;
+}
+
+.about__desc:not(:last-child) {
+  margin-bottom: 15px;
+}
