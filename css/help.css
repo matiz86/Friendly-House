@@ -39,24 +39,24 @@
   margin-bottom: 135px;
 }
 
-.help__item-title {
+.help__subtitle {
   font-size: 30px;
   line-height: 40px;
   font-weight: 600;
   margin-bottom: 40px;
 }
 
-.help__item-desc {
+.help__desc {
   font-size: 20px;
   line-height: 30px;
   color: #282626;
   font-weight: 300;
 }
 
-.help__item-desc:not(:last-child) {
+.help__desc:not(:last-child) {
   margin-bottom: 31px;
 }
 
-.help__item-desc span {
+.help__desc span {
   font-weight: 500;
 }
