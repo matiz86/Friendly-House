@@ -1,0 +1,18 @@
+:root {
+  --1: #ff8a00;
+  --2: #282626;
+  --3: #fff;
+  --4: #f2f0f1;
+
+
+  /* Fonts */
+
+  --font-family: "HelveticaNeueCyr", sans-serif;
+  --second-family: "Comfortaa", sans-serif;
+
+
+  --gap: 20px;
+  --container-width: 1180px;
+  --container-offset: 15px;
+
+}

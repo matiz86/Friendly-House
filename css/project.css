@@ -1,0 +1,284 @@
+.project {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.project__inner {
+  display: grid;
+  grid-template-columns: 680px 380px;
+  gap: 120px;
+}
+
+.project__list {
+  display: grid;
+}
+
+.project__item {
+  display: grid;
+  grid-template-columns: 280px 380px;
+  row-gap: 30px;
+  gap: 20px;
+}
+
+.project__info {
+  max-width: 380px;
+}
+
+.subtitle__info {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.33333;
+  color: var(--2);
+  margin-bottom: 15px;
+}
+
+.subtitle__descr {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--2);
+  margin-bottom: 20px;
+}
+
+.subtitle__link {
+  display: flex;
+  max-width: 152px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--1);
+  position: relative;
+
+  img {
+    padding-left: 15px;
+  }
+}
+
+.project__banner {
+  max-width: 380px;
+  height: 450px;
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 52px;
+}
+
+.banner__info {
+  padding: 293px 10px 40px;
+}
+
+.banner__descr {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.33333;
+  color: var(--3);
+}
+
+.banner__link {
+  display: flex;
+  max-width: 152px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--1);
+  margin-left: auto;
+
+  img {
+    padding-left: 15px;
+  }
+}
+
+
+.more__subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--2);
+  margin-bottom: 22px;
+}
+
+.more__img {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media(max-width: 1199.99px) {
+
+
+  .project {
+    padding-top: 90px;
+    padding-bottom: 40px;
+  }
+
+  .container {
+    max-width: 880px;
+  }
+
+  .title {
+    font-size: 44px;
+    line-height: 1.22727;
+  }
+
+  .project__inner {
+    display: grid;
+    grid-template-columns: 580px 280px;
+    gap: var(--gap);
+  }
+
+  .project__item {
+    display: grid;
+    grid-template-columns: 200px 360px;
+  }
+
+  .project__info {
+    max-width: 360px;
+  }
+
+  .subtitle__info {
+    font-size: 24px;
+    line-height: 1.25;
+    margin-bottom: 7px;
+  }
+
+  .subtitle__descr {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.44444;
+    margin-bottom: 11px;
+  }
+
+  .subtitle__link {
+    max-width: 135px;
+    font-size: 18px;
+
+    img {
+      padding-left: 9px;
+    }
+  }
+
+  .project__banner {
+    width: 280px;
+    height: 332px;
+    margin-bottom: 33px;
+  }
+
+  .banner__info {
+
+    padding: 196px 10px 46px;
+  }
+
+  .banner__descr {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .banner__link {
+    font-size: 18px;
+    line-height: 1.33333;
+
+    img {
+      padding-left: 9px;
+    }
+  }
+
+
+  .more__subtitle {
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 6px;
+  }
+
+  .more__img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media(max-width: 767.99px) {
+
+  .project {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .container {
+    max-width: 700px;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 1.13333;
+  }
+
+  .project__inner {
+    grid-template-columns: 400px 220px;
+  }
+
+  .project__item {
+    grid-template-columns: 160px 230px;
+  }
+
+  .project__info {
+    max-width: 360px;
+  }
+
+  .subtitle__info {
+    font-size: 18px;
+    line-height: 1.33333;
+    margin-bottom: 3px;
+  }
+
+  .subtitle__descr {
+    font-size: 14px;
+    line-height: 1.42857;
+    margin-bottom: 10px;
+  }
+
+  .subtitle__link {
+    max-width: 115px;
+    font-size: 14px;
+
+    img {
+      padding-left: 10px;
+    }
+  }
+
+  .project__banner {
+    max-width: 220px;
+    height: 270px;
+    margin-bottom: 20px;
+  }
+
+  .banner__info {
+    padding: 163px 10px 40px;
+  }
+
+  .banner__descr {
+    font-size: 18px;
+    line-height: 1.33333;
+  }
+
+  .banner__link {
+    font-size: 14px;
+    line-height: 1.42857;
+
+    img {
+      padding-left: 10px;
+    }
+  }
+
+
+  .more__subtitle {
+    font-size: 14px;
+    line-height: 1.42857;
+    margin-bottom: 10px;
+  }
+
+  .more__img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}

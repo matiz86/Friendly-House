@@ -1,5 +1,8 @@
 @import "css/normalize.css";
+@import "css/vars.css";
 @import "css/style.css";
-@import "css/about.css";
+@import "css/project.css";
+@import "css/pets.css";
+/* @import "css/about.css";
 @import "css/help.css";
-@import "css/contacts.css";
+@import "css/contacts.css"; */

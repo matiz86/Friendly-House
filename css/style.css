@@ -78,11 +78,6 @@ fieldset {
   margin: 0;
 }
 
-:root {
-  --font-family: 'HelveticaNeueCyr', sans-serif;
-  --second-family: 'Comfortaa', sans-serif;
-}
-
 body {
   position: relative;
   overflow-x: hidden;
@@ -95,7 +90,23 @@ body {
   font-weight: 300;
 }
 
-.wrapper {
-  max-width: 1440px;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: var(--gap);
+}
+
+.container {
   margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: calc(var(--container-width) + (var(--container-offset) * 2));
+}
+
+.title {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.2;
+  color: var(--2);
+  font-family: var(--second-family);
+  margin-bottom: 50px;
 }
