@@ -45,7 +45,7 @@
   color: var(--2);
 }
 
-@media(max-width:1199.99px) {
+@media(max-width:1024) {
 
   .pets {
     padding-top: 40px;
@@ -70,8 +70,6 @@
     grid-column: span 3;
   }
 
-  .pets__figure {}
-
   .pets__figure--long {
     grid-column: span 4;
     grid-row: span 2;
@@ -85,7 +83,9 @@
     grid-column: span 3;
   }
 
-  .pets__figure-6 {}
+  .pets__figure-6 {
+    grid-template-columns: 332px auto;
+  }
 
   .pets__img {
     margin-bottom: 20px;
