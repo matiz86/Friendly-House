@@ -3,38 +3,50 @@
   padding-bottom: 100px;
 }
 
+.pets__title {
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 50px;
+}
+
 .pets__inner {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
   row-gap: 48px;
+  max-height: 722px;
+  grid-template-areas:
+    "one one one one one two two two six six six six"
+    "three three three four four four five five six six six six "
+  ;
 }
 
 .pets__figure-1 {
-  grid-column: span 5;
+  grid-area: one;
 }
 
 .pets__figure-2 {
-  grid-column: span 3;
+  grid-area: two;
 }
 
-.pets__figure {}
-
 .pets__figure--long {
-  grid-column: span 4;
-  grid-row: span 2;
+  grid-area: six;
 }
 
 .pets__figure-4 {
-  grid-column: span 3;
+  grid-area: three;
 }
 
 .pets__figure-5 {
-  grid-column: span 3;
+  grid-area: four;
 }
 
 .pets__figure-6 {
-  grid-column: span 2;
+  grid-area: five;
 }
 
 .pets__img {
+
   margin-bottom: 20px;
 }
 
@@ -45,11 +57,9 @@
   color: var(--2);
 }
 
-@media(max-width:1024) {
-
-  .pets {
-    padding-top: 40px;
-    padding-bottom: 100px;
+@media(max-width: 1199.99px) {
+  .container {
+    max-width: 880px;
   }
 
   .pets__title {
@@ -58,37 +68,49 @@
     margin-bottom: 40px;
   }
 
+  .pets {
+    padding-top: 78px;
+    padding-bottom: 102px;
+  }
+
   .pets__inner {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    column-gap: 20px;
     row-gap: 40px;
+    max-height: 613px;
+    grid-template-areas:
+      "one one one one two two six six six"
+      "three three four four five five six six six"
+    ;
   }
 
   .pets__figure-1 {
-    grid-column: span 5;
+    grid-area: one;
   }
 
   .pets__figure-2 {
-    grid-column: span 3;
+    grid-area: two;
   }
 
   .pets__figure--long {
-    grid-column: span 4;
-    grid-row: span 2;
+    grid-area: six;
   }
 
   .pets__figure-4 {
-    grid-column: span 3;
+    grid-area: three;
   }
 
   .pets__figure-5 {
-    grid-column: span 3;
+    grid-area: four;
   }
 
   .pets__figure-6 {
-    grid-template-columns: 332px auto;
+    grid-area: five;
   }
 
   .pets__img {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .pets__descr {
@@ -97,3 +119,135 @@
   }
 }
 
+@media(max-width: 767.99px) {
+
+  .container {
+    max-width: 700px;
+    padding: 0 34px;
+  }
+
+  .pets__title {
+    font-size: 30px;
+    line-height: 1.13333;
+    margin-bottom: 30px;
+  }
+
+  .pets {
+    padding-top: 62px;
+    padding-bottom: 66px;
+  }
+
+  .pets__inner {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+    grid-template-areas:
+      "one one one one one one two two two"
+      "three three three three 37px four four four four"
+      "five five five five six six six six six"
+    ;
+  }
+
+  .pets__figure-1 {
+    grid-area: one;
+  }
+
+  .pets__figure-2 {
+    grid-area: two;
+  }
+
+  .pets__figure--long {
+    grid-area: six;
+  }
+
+  .pets__figure-4 {
+    grid-area: three;
+  }
+
+  .pets__figure-5 {
+    grid-area: four;
+  }
+
+  .pets__figure-6 {
+    grid-area: five;
+  }
+
+  .pets__img {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .pets__descr {
+    font-size: 18px;
+    line-height: 1.33333;
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width: 479.99px) {
+
+  .container {
+    max-width: 270px;
+    padding: 0 25px;
+  }
+
+  .pets__title {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .pets {
+    padding-top: 46px;
+    padding-bottom: 40px;
+  }
+
+  .pets__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+    grid-template-areas:
+      "one one one one"
+      "two two two two"
+      "six six six six"
+      "four four four four"
+      "five five five five"
+      "three three three three"
+    ;
+  }
+
+  .pets__figure-1 {
+    grid-area: one;
+  }
+
+  .pets__figure-2 {
+    grid-area: two;
+  }
+
+  .pets__figure--long {
+    grid-area: six;
+  }
+
+  .pets__figure-4 {
+    grid-area: three;
+  }
+
+  .pets__figure-5 {
+    grid-area: four;
+  }
+
+  .pets__figure-6 {
+    grid-area: five;
+  }
+
+  .pets__img {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .pets__descr {
+    font-size: 14px;
+    line-height: 1.42857;
+  }
+}

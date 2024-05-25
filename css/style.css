@@ -90,11 +90,7 @@ body {
   font-weight: 300;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: var(--gap);
-}
+
 
 .container {
   margin: 0 auto;
